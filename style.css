@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    --white: #fff;
+    --light-gray: hsl(270, 3%, 87%);
+    --light-violet: hsl(279, 6%, 55%);
+    --dark-violet: hsl(278, 68%, 11%);
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .card {
+        width: 19em;
+        height: 10em;
+
+    }
+    .card-front-img {
+        position: absolute;
+        top: 7em;
+        right: 3.8em;
+        z-index: 2;
+    }
+    .card-logo {
+        z-index: 3;
+        width: 3em;
+        position: absolute;
+        top: 8em;
+        left: 1.5em;
+    }
+    .card-number-display {
+        position: absolute;
+        z-index: 3;
+        top: 8.5em;
+        left: 1em;
+        font-size: 22px;
+        color: var(--white);
+        letter-spacing: 2px;
+    }
+    .card-holder-display {
+        position: absolute;
+        z-index: 3;
+        color: var(--white);
+        left: 2em;
+        top: 19em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .expire-date-display {
+        position: absolute;
+        z-index: 3;
+        font-size: 12px;
+        top: 19em;
+        right: 6.5em;
+        color: var(--white);
+        display: flex;
+    }
+    .card-back {
+        z-index: 1;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+    .cvc-display {
+        position: absolute;
+        font-size: 12px;
+        top: 5.9em;
+        right: 2.5em;
+        color: var(--white);
+    }
+
+    .card-details {
+        margin: 4em 1em 0 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input {
+        width: 100%;
+        height: 35px;
+        margin: 5px 0 15px 0;
+        border: 1px solid var(--light-gray);
+        border-radius: 5px;
+        padding: 5px;
+        color: var(--light-violet);
+        outline: 0;
+    }
+
+    label {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--dark-violet);
+        font-size: 18px;
+        align-self: flex-start;
+        margin-bottom: 5px;
+    }
+    .expiry-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .expiry-date {
+        width: 65%;
+    }
+    #cvc {
+        width: 100%;
+    }
+    .label-flex {
+        display: flex;
+        justify-content: space-around;
+    }
+    .label-flex input {
+        width: 60px;
+    }
+    button {
+        background: var(--dark-violet);
+        color: var(--white);
+        border: 0;
+        border-radius: 8px;
+        margin: 10px 0;
+        height: 40px;
+        width: 70%;
+        font-size: 18px;
+    }
+    .greetings {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        background: #565656;
+    }
+}
